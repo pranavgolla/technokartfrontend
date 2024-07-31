@@ -1,0 +1,101 @@
+.c1 {
+    margin-top: 100px; /* Adjust the value based on your header height */
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+form div {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004085;
+}
+
+button:focus {
+    outline: 2px solid #aaa;
+}
+
+.error {
+    color: #d9534f;
+    margin-top: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .post-form {
+        padding: 1.5rem;
+    }
+
+    .form-input, .form-textarea, .form-select {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .auth-button {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-form {
+        padding: 1rem;
+    }
+
+    .form-input, .form-textarea, .form-select {
+        padding: 0.4rem;
+        font-size: 0.85rem;
+    }
+
+    .auth-button {
+        padding: 0.4rem;
+        font-size: 0.85rem;
+    }
+}

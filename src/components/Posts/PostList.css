@@ -1,0 +1,136 @@
+.post-list-container {
+    max-width: 1000px; /* Limit the width */
+    margin: 0 auto; /* Center align */
+    padding: 1rem; /* Add padding */
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem; /* Space below the input */
+    font-size: 1rem; /* Font size */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem; /* Space between grid items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.post-item {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    cursor: pointer; /* Indicate clickable items */
+}
+
+.post-item:hover {
+    background-color: #f1f1f1; /* Light background on hover */
+    transform: scale(1.02); /* Slight scale-up effect */
+}
+
+.post-link {
+    text-decoration: none;
+    color: #007bff; /* Link color */
+    font-weight: bold; /* Bold font for links */
+    display: block; /* Ensure full width for link */
+}
+
+.post-link:hover {
+    color: #0056b3; /* Darker color on hover */
+}
+
+.pagination-controls {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.pagination-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.pagination-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02); /* Slight scale-up effect */
+}
+
+.pagination-button:active {
+    background-color: #004085;
+    transform: scale(0.98); /* Slight scale-down effect */
+}
+
+.error-message {
+    color: #d9534f;
+    margin-top: 1rem;
+    text-align: center; /* Center-align error message */
+}
+
+.end-message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .post-item {
+        padding: 0.75rem;
+    }
+
+    .pagination-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pagination-button {
+        margin-bottom: 0.5rem;
+    }
+
+    .pagination-button:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-item {
+        padding: 0.5rem;
+    }
+
+    .pagination-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pagination-button {
+        padding: 0.4rem;
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .pagination-button:last-child {
+        margin-bottom: 0;
+    }
+}
+.blue{
+    background-color: #0d1217;
+}
